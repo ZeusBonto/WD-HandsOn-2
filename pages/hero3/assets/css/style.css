@@ -119,7 +119,19 @@ section.body {
                     }
 
                     & > p {
+                        display: flex;
+                        justify-content: center;
+                        font-family: 'Baloo 2', sans-serif;
                         padding: 0.5rem;
+                        transition: all 0.3s ease;
+                        cursor: default;
+
+                        &:hover {
+                            background-color: rgba(0, 114, 0, 0.603);
+                            transform: scale(1.1);
+                            border-radius: 15px;
+                            transition: all 0.3s ease;
+                        }
                     }
                 }
             }
