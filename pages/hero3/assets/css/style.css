@@ -4,9 +4,167 @@
 }
 
 body {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     background-image: url(../img/viper-background.jpg);
     background-size: cover;
     font-family: 'Paprika', cursive;
+}
+
+section.body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    width: 100vw;
+    height: 90vh;
+
+    & > .left {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 50vw;
+
+        & > .up {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 43vh;
+
+            & > .static {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1vh;
+                border-radius: 15px;
+                background: inherit;
+                backdrop-filter: blur(10px);
+                border: 3px rgb(0, 105, 0) solid;
+                padding: 1vh 3vw 1vh 3vw;
+                margin-right: 12vw;
+
+                & > .title {
+                    text-shadow: black 1px 1px;
+                    font-size: 40px;
+                    color: rgb(29, 87, 29);
+                }
+
+                & > .skills {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 1vh;
+
+                    & > .skill {
+                        display: flex;
+                        width: 13vw;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: row;
+
+                        & > img {
+                            filter: drop-shadow(5px 5px 5px #666666);
+                            height: 50px;
+                        }
+
+                        & > p {
+                            text-shadow: black 2px 2px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & > .down {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+
+            & > .animated {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1vw;
+                border-radius: 15px;
+                background: inherit;
+                backdrop-filter: blur(10px);
+                border: 3px rgb(0, 105, 0) solid;
+                padding: 1vh 2vw 1vh 2vw;
+                margin-right: 10vw;
+                margin-top: 5vh;
+
+                & > .left, .middle, .right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1vh;
+                    padding: 0px 1vw 0px 1vw;
+                    border-radius: 15px;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.384);
+                        transform: scale(0.9);
+                        transition: all 0.3s ease;
+                    }
+
+                    & > h1 {
+                        display: flex;
+                        justify-content: center;
+                        background-color: rgba(1, 82, 1, 0.473);
+                        border-radius: 15px;
+                    }
+
+                    & > p {
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    & > .right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 45vw;
+        height: 90vh;
+
+        & > .name {
+            display: flex;
+            flex-direction: column;
+            margin-right: 2vw;
+            margin-bottom: 10vh;
+
+            & > p {
+                font-size: 40px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: rgb(29, 87, 29);
+                    transform: translate(-10px);
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+
+        & > .role {
+            display: flex;
+            flex-direction: row;
+
+            & > p {
+                font-size: 100px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: rgb(29, 87, 29);
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
 }
