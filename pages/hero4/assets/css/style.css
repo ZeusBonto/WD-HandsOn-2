@@ -2,3 +2,158 @@
     padding: 0px;
     margin: 0px;
 }
+
+body {
+    height: 90vh;
+    width: 100vw;
+    background-image: url(../img/breach-background.jpg);
+    background-size: cover;
+}
+
+section.body {
+    display: flex;
+    height: 90vh;
+    width: 98vw;
+    flex-direction: row;
+    color: white;
+
+    & > .left {
+        display: flex;
+        height: 90vh;
+        width: 50vw;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & > .up {
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+            margin-top: 10vh;
+
+            & > .static {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 20vw;
+                padding: 20px 0.1vw 4vh 0.1vw;
+                border-radius: 15px;
+                background-color: rgb(201, 177, 177);
+                color: black;
+                transform: scale(0.8);
+                border: 5px rgba(138, 98, 105, 0.411) solid;
+
+                & > img {
+                    border: 5px rgb(138, 98, 105) solid;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+
+                & > h1 {
+                    margin-top: 8px;
+                }
+
+                & > p {
+                    margin-top: 10px;
+                    display: flex;
+                    text-align: justify;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    font-family: 'Open Sans', sans-serif;
+                }
+            }
+
+            & > .animated {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 20vw;
+                border-radius: 15px;
+                background-color: rgb(201, 177, 177);
+                color: black;
+                transform: scale(0.8);
+                border: 5px rgba(138, 98, 105, 0.411) solid;
+
+                & > .top {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(150, 127, 127);
+                    border-radius: 15px;
+                    width: 15vw;
+                    height: 25vh;
+
+                    & > img {
+                        height: 400px;
+                        margin-bottom: 6vh;
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            transform: translate(0px, 30px);
+                            transition: all 0.5s ease;
+                            z-index: 0;
+                        }
+                    }
+                }
+
+                & > .bottom {
+                    background-color: rgb(201, 177, 177);
+                    border-radius: 15px;
+                    width: 20vw;
+                    height: 30vh;
+                    z-index: 2;
+
+                    & > p {
+                        margin-top: 30px;
+                        display: flex;
+                        text-align: justify;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        font-family: 'Open Sans', sans-serif;
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            padding: 10px;
+                            background-color: rgb(160, 138, 138);
+                            border-radius: 15px;
+                            transition: all 0.5s ease;
+                        }
+                    }
+                }
+            }
+        }
+
+        & > .down {
+            display: flex;
+            flex-direction: row;
+            margin-left: 5vw;
+            margin-bottom: 30vh;
+
+            & > p.down {
+                font-size: 100px;
+
+                &:hover {
+                    transform: rotateZ(180deg);
+                }
+            }
+
+            & > p.right {
+                font-size: 100px;
+
+                &:hover {
+                    transform: rotateX(180deg);
+                }
+            }
+        }
+    }
+
+    & > .right {
+        display: flex;
+        height: 90vh;
+        width: 50vw;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 80px;
+    }
+}
