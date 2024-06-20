@@ -1,0 +1,22 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    height: 8vh;
+    width: 100vw;
+    box-shadow: 2px 2px;
+    display: flex;
+    background: inherit;
+    backdrop-filter: blur(3px);
+
+    & > .head {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100vw;
+        margin-right: 4vw;
+        gap: 1vw;
+    }
+}
