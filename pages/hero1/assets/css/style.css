@@ -6,7 +6,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-image: url(../img/sentinels.jpg);
+    background-image: url(../img/sage-background.jpg);
     background-size: cover;
 }
 
@@ -41,6 +41,7 @@ section.body {
 
         & > .static-right {
             & > p {
+                text-shadow: black 1.5px 1.5px;
                 color: white;
             }
         }
@@ -74,6 +75,7 @@ section.body {
         background: inherit;
         backdrop-filter: blur(3px);
         box-shadow: black 2px 2px 3px 3px;
+        text-shadow: black 1.5px 1.5px;
 
         & > .left {
             & > img {
