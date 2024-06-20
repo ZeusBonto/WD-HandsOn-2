@@ -4,7 +4,7 @@
 }
 
 header {
-    height: 8vh;
+    height: auto;
     width: 100vw;
     box-shadow: 2px 2px;
     display: flex;
@@ -17,6 +17,29 @@ header {
         align-items: center;
         width: 100vw;
         margin-right: 4vw;
-        gap: 1vw;
+        gap: 0.5vw;
+
+        & > a {
+            text-decoration: none;
+
+            & > button {
+                cursor: pointer;
+                padding: 1rem;
+                color: white;
+                background-color: rgba(255, 255, 255, 0);
+                border: none;
+                transition: all 0.6s ease;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.295);
+                    transition: all 0.6s ease;
+                    font-size: 15px;
+                }
+            }
+
+            & > button.home {
+                background-color: rgba(255, 255, 255, 0.37);
+            }
+        }
     }
 }
