@@ -2,3 +2,105 @@
     padding: 0px;
     margin: 0px;
 }
+
+body {
+    height: 90vh;
+    width: 100vw;
+    background-image: url(../img/raze-background.jpg);
+    background-size: cover;
+}
+
+section.body {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    & > .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > .static {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: black;
+            background-image: linear-gradient(to bottom right, orange, brown);
+            padding: 2vh 2vw 2vh 2vw;
+            border-radius: 25px;
+
+            & > .up {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 0.4rem;
+
+                & > img {
+                    height: 80px;
+                }
+
+                & > .gitna {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    & > h1 {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            & > .down {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 2vw;
+
+                & > .left {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 0.2rem;
+
+                    & > img {
+                        height: 150px;
+                    }
+                }
+
+                & > .divider {
+                    height: 30vh;
+                    width: 2px;
+                    background-color: black;
+                }
+
+                & > .right {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 0.4rem;
+                }
+            }
+        }
+    }
+
+    & > .mid {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        color: white;
+
+        & > h1 {
+            font-size: 100px;
+        }
+    }
+}
