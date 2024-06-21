@@ -1,7 +1,6 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: "Franklin Gothic", "ITC Franklin Gothic";
 }
 
 body {
@@ -9,6 +8,7 @@ body {
     width: 100vw;
     background-image: url(../img/jett-background.jpg);
     background-size: cover;
+    font-family: "Franklin Gothic", "ITC Franklin Gothic";
 }
 
 section.body {
