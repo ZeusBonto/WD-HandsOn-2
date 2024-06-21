@@ -1,5 +1,12 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: "Papyrus", "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/viper-background.jpg);
+    background-size: cover;
+    font-family: 'Paprika', cursive;
 }
