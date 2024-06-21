@@ -650,9 +650,9 @@ section.body {
     & > .hero5 {
         display: flex;
         width: 100vw;
-        height: 50vh;
+        height: 40vh;
         background-image: url(../img/backgrounds/raze-background.jpg);
-        background-position: 0px -30vh;
+        background-position: 0px -20vh;
         background-size: cover;
         flex-direction: row;
         align-items: center;
